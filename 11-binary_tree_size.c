@@ -11,8 +11,6 @@ size_t binary_tree_size(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	/* Size of the current tree is the size of the left subtree
-	   plus the size of the right subtree, plus 1 for the current node */
 	return (binary_tree_size(tree->left) + binary_tree_size(tree->right) + 1);
 }
 
